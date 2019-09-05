@@ -18,7 +18,7 @@ export class ProductAddComponent implements OnInit {
 
   constructor(private router: Router, private api: ApiService, private formBuilder: FormBuilder) { }
 
-  ngOnInit() {
+  ngOnInit() {  
     this.productForm = this.formBuilder.group({
       'prod_name' : [null, Validators.required],
       'prod_desc' : [null, Validators.required],

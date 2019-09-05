@@ -2,6 +2,8 @@
   "name": "angular7-crud",
   "version": "0.0.0",
   "scripts": {
+    "build:prod": "./node_modules/.bin/ng build --prod --aot=false",
+    "build:aot": "./node_modules/.bin/ng build --prod --aot",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -21,8 +23,10 @@
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
+    "bootstrap": "^4.3.1",
     "core-js": "^3.2.1",
     "hammerjs": "^2.0.8",
+    "nodemon": "^1.19.2",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
